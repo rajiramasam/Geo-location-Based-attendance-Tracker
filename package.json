@@ -52,5 +52,9 @@
     "eslint": "^8.57.1",
     "eslint-config-next": "^14.2.6",
     "tailwindcss": "^3.4.10"
-  }
+  },
+  "resolutions": {
+  "eslint": "^8.57.1"
+}
+
 }
