@@ -4,8 +4,8 @@ import "@/styles/globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Presence",
-  description: "Geolocation-Based Mobile Attendance for Your On-the-Go Workforce, made by the team ADSLabs.",
+  title: "GLBAT",
+  description: "Geolocation-Based Mobile Attendance for Your On-the-Go Workforce, made by the team Ideation X.",
 };
 
 export default function RootLayout({ children }) {

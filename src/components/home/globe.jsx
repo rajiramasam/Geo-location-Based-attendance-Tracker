@@ -27,10 +27,10 @@ export default function Globe() {
         arcTime: 800,
         arcLength: 0.9,
         rings: 1,
-        maxRings: 4,
+        maxRings: 10,
         initialPosition: { lat: 22.3193, lng: 114.1694 },
-        autoRotate: true,
-        autoRotateSpeed: 0.7,
+        autoRotate: false,
+        autoRotateSpeed: 0.10,
       };
       
       // Lighter color palette for the arcs
@@ -400,8 +400,8 @@ export default function Globe() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center py-20 md:h-screen h-auto dark:bg-black bg-white relative w-full">
-      <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
+    <div className="flex flex-col items-center justify-center py-20 md:h-screen h-auto dark:bg-white bg-black relative w-full">
+      <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4 bg-black">
         <motion.div
           initial={{
             opacity: 0,
@@ -416,20 +416,20 @@ export default function Globe() {
           }}
           className="text-center"
         >
-          <h2 className="text-xl md:text-4xl font-bold text-black dark:text-white">
+          <h2 className="text-xl md:text-4xl font-bold text-white dark:text-black">
             We manage attendance{" "}
-            <span className="text-[#00bf89]">globally</span>.
+            <span className="text-[#00f7d6]">globally</span>.
           </h2>
-          <p className="text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
-            Our focus is to develop most efficient attendane solutions using geolocation 🌍
+          <p className="text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto text-white">
+            Our focus is to develop most efficient attendance solutions using geolocation 🌍
           </p>
         </motion.div>
 
         {/* Gradient background for a smooth transition */}
-        <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
+        <div className="absolute w-full bottom-0 inset-x-0 h-10 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-white to-black z-10" />
 
         {/* Globe container */}
-        <div className="relative md:w-[70%] mx-auto flex justify-center items-center w-[22rem] sm:w-[26rem] bottom-0 md:-bottom-20 h-[20rem] sm:h-[28rem] md:h-[32rem] z-10">
+        <div className="relative md:w-[70%] mx-auto flex justify-center items-center w-[22rem] sm:w-[26rem] bottom-0 md:-bottom-20 h-[20rem] sm:h-[28rem] md:h-[32rem] z-10 bg-black">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>

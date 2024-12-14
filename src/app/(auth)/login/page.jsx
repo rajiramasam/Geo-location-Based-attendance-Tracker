@@ -52,18 +52,18 @@ function LoginFormDemo() {
   };
 
   return (
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 md:shadow-md shadow-input bg-white dark:bg-black md:mt-16 mt-16">
+    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 md:shadow-[0px_2px_0px_2px_#00f7d6_inset,0px_-2px_0px_-2px_#00f7d6_inset] shadow-input bg-black dark:bg-white md:mt-16 mt-16">
       <div className="flex gap-2 ">
-        <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
+        <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200 text-white">
           Welcome to
         </h2>
         <div className="">
           <Image src="/logo.svg" alt="Logo" width="150" height="200" />
         </div>
       </div>
-      <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
+      <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300 text-white">
         Don't have an account?{" "}
-        <Link href="/signup" className="text-blue-500 font-semibold">
+        <Link href="/signup" className="text-[#00f7d6] font-semibold">
           Sign-up
         </Link>
       </p>
@@ -73,7 +73,7 @@ function LoginFormDemo() {
           <Label htmlFor="email">Email Address</Label>
           <Input
             id="email"
-            placeholder="me@akshitasrivastava.xyz"
+            placeholder="LewisHamilton@gmail.com"
             type="email"
             value={formData.email}
             onChange={handleChange}
@@ -95,14 +95,14 @@ function LoginFormDemo() {
         {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
 
         <button
-          className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+          className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#00f7d6_inset,0px_-1px_0px_0px_#00f7d6_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
           type="submit"
         >
           Log in &rarr;
           <BottomGradient />
         </button>
 
-        <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
+        <div className="bg-gradient-to-r from-transparent via-[#00f7d6] dark:via-[#00f7d6] to-transparent my-8 h-[1px] w-full" />
 
         <div className="flex gap-3">
           <button

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FaTwitter } from 'react-icons/fa';
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { color } from 'framer-motion';
 
 
 
@@ -91,7 +92,7 @@ function getYear() {
 function NewFooter() {
   return (
     <PageWrapper>
-      <footer className='mx-4 mb-4'>
+      <footer className='mx-4 mb-4 bg-black'>
         <FooterBaseContainer aria-label="Main Footer" $isSub={false}>
           <Text as="p" $isSub={false}>
             <FooterLogoImage alt="Footer Logo" /> <br />
@@ -103,13 +104,13 @@ function NewFooter() {
             <a
               href="https://www.presence.devxoshakya.xyz"
               rel="noopener noreferrer"
-              style={{ color: 'grey' }}
+              style={{ color: '#00f7d6' }}
             >
-              Presence
+              GLBAT
             </a>{' '}
-            | Website Made by <strong><a href='https://adslabs.devxoshakya.xyz' rel='noopener noreferrer'>ADSLabs</a></strong>
+            | Website Made by <strong><a href='https://adslabs.devxoshakya.xyz' style={{ color: '#00f7d6' }} rel='noopener noreferrer'>Ideation X</a></strong>
           </Text>
-          <nav aria-label="Social Links">
+          <nav aria-label="Social Links" style={{ color: '#00f7d6' }}>
             <SocialIconsWrapper>
               {[
                 {
@@ -127,6 +128,7 @@ function NewFooter() {
                   Icon: FaGithub,
                   label: 'Github',
                 },
+              
               ].map(({ href, Icon, label }) => (
                 <ShareButton
                   key={href}

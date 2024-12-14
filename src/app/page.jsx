@@ -11,19 +11,19 @@ import NewFooter from "@/components/home/footer";
 export default function Home() {
   return (
     <>
-      <main className="">
-        <nav className="m-0 p-0 fixed top-0 w-full bg-white z-50">
+      <main className="bg-black">
+        <nav className="m-0 p-0 fixed top-0 w-full bg-black z-10">
           <div className="mx-auto">
-            <div className="flex justify-between items-center py-4 px-4 md:px-16">
+            <div className="flex justify-between items-center py-4 px-4 md:px-16 bg-black">
               <div className="w-40 md:w-64">
-                <Image src="/logo.svg" alt="Logo" width="200" height="200" />
+                <Image src="/logo.svg" alt="Logo" width="98" height="98" />
               </div>
               <div>
-                <Link href="/login" className="text-blue-500 font-semibold">
+                <Link href="/login" className="text-[#00f7d6] font-eurostile-bold">
                   Login
                 </Link>
                 <Link href="/signup">
-                  <Button className="ml-2 bg-blue-500 font-semibold hover:!bg-blue-700">
+                  <Button className="ml-2 bg-[#00f7d6] font-eurostile-bold hover:!bg-cyan-700 text-black">
                     Sign Up
                   </Button>
                 </Link>
@@ -32,24 +32,24 @@ export default function Home() {
           </div>
         </nav>
 
-        <div className="flex md:flex-row md-0 md:mb-32 flex-col md:mt-32 mt-16 px-3 md:px-32 mx-auto">
-          <div className="h-full w-full max-w-[40rem] items-center justify-center overflow-hidden pt-8">
-            <BoxReveal boxColor={"#00bf89"} duration={0.5}>
-              <p className="md:text-[3rem] text-[1.75rem] font-semibold">
+        <div className="flex md:flex-row md-0 md:mb-32 flex-col md:mt-32 mt-16 px-3 md:px-32 mx-auto bg-black font-eurostile-bold">
+          <div className="h-full w-full max-w-[40rem] items-center justify-center overflow-hidden pt-8 font-eurostile-bold">
+            <BoxReveal boxColor={"#04BFAD"} duration={0.5}>
+              <p className="md:text-[3rem] text-[1.75rem] font-eurostile-bold text-white">
                 Geolocation-Based Mobile Attendance for Your On-the-Go Workforce{" "}
-                <span className="text-[#2cb68f]">.</span>
+                <span className="text-[#00f7d6]">.</span>
               </p>
             </BoxReveal>
 
-            <BoxReveal boxColor={"#00bf89"} duration={0.5}>
-              <h2 className="mt-[.5rem] text-[1rem]">
+            <BoxReveal boxColor={"#00f7d6"} duration={0.5}>
+              <h2 className="mt-[.5rem] text-[1rem] text-white">
                 Attendance Management app for{" "}
-                <span className="text-[#00bf89]">GAIL (India) Limited</span>
+                <span className="text-[#00f7d6]">GAIL (India) Limited</span>
               </h2>
             </BoxReveal>
 
-            <BoxReveal boxColor={"#00bf89"} duration={0.5}>
-              <div className="mt-[1.5rem]">
+            <BoxReveal boxColor={"#00f7d6"} duration={0.5}>
+              <div className="mt-[1.5rem] text-white">
                 <p>
                   -&gt; Real-time attendance tracking with geolocation accuracy
                   up to 10 meters. <br />
@@ -58,16 +58,16 @@ export default function Home() {
                   -&gt; Comprehensive leave management system, including
                   approval and tracking of Paid Leaves (PL). <br />
                   -&gt; Built using
-                  <span className="font-semibold text-[#2cb68f]"> Next.js</span>
+                  <span className="font-semibold text-[#00f7d6]"> Next.js</span>
                   ,
-                  <span className="font-semibold text-[#00bf89]"> MongoDB</span>
+                  <span className="font-semibold text-[#00f7d6]"> MongoDB</span>
                   ,
-                  <span className="font-semibold text-[#00bf89]">
+                  <span className="font-semibold text-[#00f7d6]">
                     {" "}
                     Tailwind CSS
                   </span>
                   , and
-                  <span className="font-semibold text-[#00bf89]">
+                  <span className="font-semibold text-[#00f7d6]">
                     {" "}
                     Capacitor
                   </span>
@@ -76,19 +76,20 @@ export default function Home() {
               </div>
             </BoxReveal>
 
-            <BoxReveal boxColor={"#00bf89"} duration={0.5}>
+            <BoxReveal boxColor={"#00f7d6"} duration={0.5}>
               <Link href={"/signup"}>
-                <Button className="mt-[1.6rem] bg-blue-500 hover:!bg-blue-700">
+                <Button className="mt-[1.6rem] bg-[#00f7d6] hover:!bg-cyan-700 text-black">
                   Get Started
                 </Button>
               </Link>
               <Link href={"https://github.com/ads-labs/presence/releases/download/1.0.1/Presence.apk"}>
-                <Button className="mt-[1.6rem] bg-blue-500 hover:!bg-blue-700 ml-2">
+                <Button className="mt-[1.6rem] bg-[#00f7d6] hover:!bg-cyan-700 ml-2 text-black">
                   Download App
                 </Button>
               </Link>
             </BoxReveal>
           </div>
+
           <BlurFade delay={0.25 * 2} inView>
             <div id="main-image" className="md:px-8 py-16 md:py-0">
               <img
@@ -104,16 +105,16 @@ export default function Home() {
         {/* <World globeConfig={globeConfig} /> */}
         <Globe />
         {/* <Globe /> */}
-        <BlurFade delay={0.25 * 2} inView>
+        <BlurFade delay={0.25 * 4} inView>
           <div
             id="gps-tracking"
-            className="flex flex-col justify-center items-center gap-4 md:mt-16 !mt-0 md:p-0 px-4 py-4"
+            className="flex flex-col justify-center items-center gap-4 md:mt-16 !mt-0 md:p-0 px-4 py-4 bg-black"
           >
-            <p className="md:text-[3rem] text-[1.75rem] font-bold">
-             Real Time Attendance Tracking, No hassle! <span className="text-[#2cb68f]">.</span>
+            <p className="md:text-[3rem] text-[1.75rem] font-bold text-white">
+             Real Time Attendance Tracking, No hassle! <span className="text-[#00f7d6]">.</span>
             </p>
-            <h2 className="mt-[.5rem] text-[0.3] md:text-[1rem] text-center font-semibold">
-             Say goodbye to manual attendance with our automated GPS tracking functionality app Presence.{" "}
+            <h2 className="mt-[.5rem] text-[0.3] md:text-[1rem] text-center font-semibold text-white">
+             Say goodbye to manual attendance with our automated GPS tracking functionality app GLBAT.{" "}
               <br />
               Its a user friendly app that aims at managing the workhours of your workforce seamlessly {" "}
               <br />
@@ -132,15 +133,15 @@ export default function Home() {
         <BlurFade delay={0.25 * 2} inView>
           <div
             id="retrieve-location"
-            className="flex flex-col md:flex-row md:px-[16rem] px-2 md:mt-32 mb-32 mt-2"
+            className="flex flex-col md:flex-row md:px-[16rem] px-2 md:mt-32 mb-32 mt-2 bg-black"
           >
-            <div id="content" className="md:w-[36rem] px-4 gap-4 mb-8">
+            <div id="content" className="md:w-[36rem] px-4 gap-4 mb-8 text-white">
               <p className="md:text-[3rem] text-[1.75rem] font-bold">
                 Geo Fenced Attendance Zones{" "}
-                <span className="text-[#2cb68f]">.</span>
+                <span className="text-[#00f7d6]">.</span>
               </p>
               <h2 className="mt-[.5rem] text-[0.3] md:text-[1rem] font-semibold">
-              Sets up specific areas where attendance is logged  to ensure presence at right location <br />
+              Sets up specific areas where attendance is logged  to ensure GLBAT at right location <br />
               and generates detailed attendance report including the check-in and check-out times ,<br />
               the workhours associated with specified location and keeps a record of the leaves taken and remaining ones .
               </h2>
