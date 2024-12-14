@@ -8,6 +8,8 @@ import { Terminal } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useSession } from "next-auth/react";
 
+import Image from 'next/image';
+
 
 const LocationMarker = ({ position, session }) => (
   
@@ -23,7 +25,7 @@ const LocationMarker = ({ position, session }) => (
         border: 1px solid white;
         box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
       ">
-        <img src="${session?.user?.image}" style="width: 100%; height: 100%; object-fit: cover;" />
+        <Image src="${session?.user?.image}" style="width: 100%; height: 100%; object-fit: cover;" />
       </div>`,
       iconSize: [40, 40],
       iconAnchor: [20, 40],

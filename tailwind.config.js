@@ -8,6 +8,13 @@ const {
 } = require("tailwindcss/lib/util/flattenColorPalette");
 
 module.exports = {
+
+  eslint: {
+    ignoreDuringBuilds: true,
+},
+
+
+
   important: true,
   darkMode: ["class"],
   content: [

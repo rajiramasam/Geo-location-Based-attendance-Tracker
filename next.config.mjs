@@ -12,6 +12,8 @@ const nextConfig = {
   },
 };
 
+
+
 export default withPWA({
   dest: 'public',
   register: true,
